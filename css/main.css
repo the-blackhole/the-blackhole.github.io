@@ -206,3 +206,24 @@ body {
   height: 21.97168px;
   background: rgba(110, 138, 142, 0.3);
   margin-top: 0; }
+
+.nav-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.nav-item a {
+  padding: 40px 30px;
+  color: rgba(0, 0, 0, 0.3);
+  display: block;
+  transition: all .3s; }
+  .nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8); }
