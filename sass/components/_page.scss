@@ -5,6 +5,53 @@ body {
   font-family: 'MF LangSong (Noncommercial)', Arial;
 }
 
+a {
+  color: $blue;
+}
+
+a.yeah {
+  position: relative;
+  display: inline-block;
+  perspective: 800px;
+  text-align: center;
+  span {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 0 5px;
+    background: transparent;
+    transition: transform 0.4s, background 0.4s;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% -20px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      color: transparent;
+      background: transparent;
+      content: attr(data-hover);
+      transition: background 0.4s;
+      transform: rotateY(90deg);
+      transform-origin: 0 50%;
+      pointer-events: none;
+    }
+  }
+  &:hover {
+    span {
+      background: lighten($blue, 10%);
+      color: #fff;
+      transform: rotateY(-90deg);
+      &:before {
+        background: lighten($blue, 10%);
+        color: #fff;
+      }
+    }
+  }
+  
+}
+
 .container {
   width: 620px;
   margin: 40px auto;

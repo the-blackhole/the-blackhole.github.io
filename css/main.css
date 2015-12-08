@@ -4,6 +4,44 @@ body {
   width: 100%;
   font-family: 'MF LangSong (Noncommercial)', Arial; }
 
+a {
+  color: #0099cc; }
+
+a.yeah {
+  position: relative;
+  display: inline-block;
+  perspective: 800px;
+  text-align: center; }
+  a.yeah span {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 0 5px;
+    background: transparent;
+    transition: transform 0.4s, background 0.4s;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% -20px; }
+    a.yeah span:before {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      color: transparent;
+      background: transparent;
+      content: attr(data-hover);
+      transition: background 0.4s;
+      transform: rotateY(90deg);
+      transform-origin: 0 50%;
+      pointer-events: none; }
+  a.yeah:hover span {
+    background: deepskyblue;
+    color: #fff;
+    transform: rotateY(-90deg); }
+    a.yeah:hover span:before {
+      background: deepskyblue;
+      color: #fff; }
+
 .container {
   width: 620px;
   margin: 40px auto;
@@ -211,6 +249,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
+  width: 120px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1); }
 
@@ -219,11 +258,51 @@ body {
   padding: 0;
   list-style: none; }
 
-.nav-item a {
-  padding: 40px 30px;
-  color: rgba(0, 0, 0, 0.3);
-  display: block;
-  transition: all .3s; }
-  .nav-item a:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: rgba(0, 0, 0, 0.8); }
+.nav-item {
+  position: relative; }
+  .nav-item > a {
+    padding: 40px 30px;
+    color: rgba(0, 0, 0, 0.3);
+    display: block;
+    transition: all .3s;
+    text-align: center; }
+    .nav-item > a:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: rgba(0, 0, 0, 0.8); }
+
+.fly-layer {
+  position: absolute;
+  left: 160px;
+  background: rgba(255, 255, 255, 0);
+  left: -2000px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px 5px;
+  transition: background 1s, width 1s, height 1s, border-radius 1s;
+  overflow: hidden; }
+  .fly-layer.fly-layer--show {
+    transition: background 1s, width 1s, height 1s, border-radius 1s;
+    left: 120px;
+    border-radius: 0 50px;
+    top: 0;
+    background: white;
+    display: block;
+    width: 360px;
+    height: 320px;
+    padding: 40px; }
+  .fly-layer strike {
+    opacity: 0.5; }
+
+.show-layer-selected {
+  background-color: white;
+  color: black !important;
+  padding-right: 29px;
+  border-right: 1px dashed rgba(0, 0, 0, 0.5); }
+
+.hide-layer {
+  position: absolute;
+  bottom: 40px;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none; }
+  .hide-layer:hover {
+    color: black; }
