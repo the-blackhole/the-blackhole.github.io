@@ -1,6 +1,5 @@
 .fly-layer {
   position: absolute;
-  left: 160px;
   background: rgba(255, 255, 255, 0);
   left: -2000px;
   width: 40px;
@@ -10,7 +9,7 @@
   overflow: hidden;
   &.fly-layer--show {
     transition: background 1s, width 1s, height 1s, border-radius 1s;
-    left: 120px;
+    left: 130px;
     border-radius: 0 50px;
     top: 0;
     background: rgba(255, 255, 255, 1);

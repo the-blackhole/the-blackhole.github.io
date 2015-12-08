@@ -1,8 +1,9 @@
+@charset "UTF-8";
 body {
   background: #1C252E;
   height: 100%;
   width: 100%;
-  font-family: 'MF LangSong (Noncommercial)', Arial; }
+  font-family: 'MF LangSong (Noncommercial)', Helvetica, Tahoma, Arial, 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", sans-serif; }
 
 a {
   color: #0099cc; }
@@ -249,7 +250,7 @@ a.yeah {
   position: fixed;
   left: 0;
   top: 0;
-  width: 120px;
+  width: 130px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1); }
 
@@ -262,7 +263,8 @@ a.yeah {
   position: relative; }
   .nav-item > a {
     padding: 40px 30px;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
     display: block;
     transition: all .3s;
     text-align: center; }
@@ -272,7 +274,6 @@ a.yeah {
 
 .fly-layer {
   position: absolute;
-  left: 160px;
   background: rgba(255, 255, 255, 0);
   left: -2000px;
   width: 40px;
@@ -282,7 +283,7 @@ a.yeah {
   overflow: hidden; }
   .fly-layer.fly-layer--show {
     transition: background 1s, width 1s, height 1s, border-radius 1s;
-    left: 120px;
+    left: 130px;
     border-radius: 0 50px;
     top: 0;
     background: white;
