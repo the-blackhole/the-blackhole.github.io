@@ -7,6 +7,7 @@
   border-radius: 100px 5px;
   transition: background 1s, width 1s, height 1s, border-radius 1s;
   overflow: hidden;
+  z-index: 1;
   &.fly-layer--show {
     transition: background 1s, width 1s, height 1s, border-radius 1s;
     left: 130px;
