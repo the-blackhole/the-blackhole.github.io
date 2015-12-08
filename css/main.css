@@ -1,0 +1,208 @@
+body {
+  background: #1C252E;
+  height: 100%;
+  width: 100%;
+  font-family: 'MF LangSong (Noncommercial)', Arial; }
+
+.container {
+  width: 620px;
+  margin: 40px auto;
+  height: 620px; }
+
+.header {
+  position: absolute;
+  right: 10px;
+  top: 20px; }
+  .header h1 {
+    font-size: 300px;
+    line-height: 300px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1); }
+  .header p {
+    font-size: 2em;
+    text-align: right;
+    padding-right: 20px;
+    margin: 0; }
+  .header .hide {
+    color: #1C252E;
+    float: right; }
+
+.circle {
+  background: transparent;
+  border-radius: 100%; }
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes rspin {
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+
+.c1 {
+  margin-top: 40px;
+  border: 8px dashed rgba(171, 75, 171, 0.5);
+  width: 600px;
+  height: 600px;
+  -webkit-animation: spin 4s linear infinite; }
+
+.c2 {
+  border: 8px solid rgba(171, 75, 171, 0.5);
+  width: 540px;
+  height: 540px;
+  margin-top: 22px; }
+
+.c3 {
+  border: 16px solid rgba(171, 75, 171, 0.3);
+  width: 459px;
+  height: 459px;
+  margin-top: 24.5px; }
+
+.c4 {
+  border: 4px solid rgba(171, 75, 171, 0.3);
+  width: 413.1px;
+  height: 413.1px;
+  margin-top: 18.95px; }
+
+.c5 {
+  border: 4px dashed rgba(0, 153, 204, 0.5);
+  width: 371.79px;
+  height: 371.79px;
+  margin-top: 16.655px;
+  -webkit-animation: rspin 3s linear infinite; }
+
+.c6 {
+  border: 4px solid rgba(171, 75, 171, 0.2);
+  width: 342.0468px;
+  height: 342.0468px;
+  margin-top: 10.8716px; }
+
+.c7 {
+  border: 4px solid rgba(148, 141, 214, 0.6);
+  width: 334.0468px;
+  height: 334.0468px;
+  margin-top: 0; }
+
+.c8 {
+  border: 4px solid rgba(171, 75, 171, 0.2);
+  width: 307.32306px;
+  height: 307.32306px;
+  margin-top: 9.36187px; }
+
+.c9 {
+  border: 8px solid rgba(148, 141, 214, 0.6);
+  width: 291.32306px;
+  height: 291.32306px;
+  margin-top: 0; }
+
+.c10 {
+  border: 2px solid rgba(0, 153, 204, 0.5);
+  width: 262.19075px;
+  height: 262.19075px;
+  margin-top: 12.56615px; }
+
+.c11 {
+  border: 4px dashed rgba(0, 153, 204, 0.3);
+  width: 235.97168px;
+  height: 235.97168px;
+  margin-top: 9.10954px;
+  -webkit-animation: spin 3s linear infinite; }
+
+.c12 {
+  border: 6px solid rgba(148, 141, 214, 0.6);
+  width: 223.97168px;
+  height: 223.97168px;
+  margin-top: 0; }
+
+.c13 {
+  border: 4px solid rgba(234, 166, 189, 0.6);
+  width: 215.97168px;
+  height: 215.97168px;
+  margin-top: 0; }
+
+.c14 {
+  border: 6px solid rgba(69, 131, 159, 0.6);
+  width: 187.97168px;
+  height: 187.97168px;
+  margin-top: 8px; }
+
+.c15 {
+  border: 6px solid rgba(180, 237, 246, 0.6);
+  width: 175.97168px;
+  height: 175.97168px;
+  margin-top: 0; }
+
+.c16 {
+  border: 8px dotted rgba(234, 166, 189, 0.6);
+  width: 167.97168px;
+  height: 167.97168px;
+  margin-top: -4px;
+  margin-left: -4px;
+  -webkit-animation: rspin 8s linear infinite; }
+
+.c17 {
+  border: 4px solid rgba(180, 237, 246, 0.6);
+  width: 159.97168px;
+  height: 159.97168px;
+  margin-top: 0; }
+
+.c18 {
+  border: 4px solid rgba(110, 138, 142, 0.6);
+  width: 143.97168px;
+  height: 143.97168px;
+  margin-top: 4px; }
+
+.c19 {
+  border: 6px dotted rgba(180, 237, 246, 0.6);
+  width: 115.97168px;
+  height: 115.97168px;
+  margin-top: 8px;
+  -webkit-animation: rspin 4s linear infinite; }
+
+.c20 {
+  border: 6px solid rgba(234, 166, 189, 0.8);
+  width: 109.97168px;
+  height: 109.97168px;
+  margin-top: -3px;
+  margin-left: -3px; }
+
+.c21 {
+  border: 12px solid rgba(234, 166, 189, 0.3);
+  width: 85.97168px;
+  height: 85.97168px;
+  margin-top: 0; }
+
+.c22 {
+  border: 4px dotted rgba(234, 166, 189, 0.8);
+  width: 77.97168px;
+  height: 77.97168px;
+  margin-top: 0;
+  -webkit-animation: spin 4s linear infinite; }
+
+.c23 {
+  border: 8px solid rgba(180, 237, 246, 0.5);
+  width: 61.97168px;
+  height: 61.97168px;
+  margin-top: 0; }
+
+.c24 {
+  border: 4px solid rgba(110, 138, 142, 0.5);
+  width: 53.97168px;
+  height: 53.97168px;
+  margin-top: 0; }
+
+.c25 {
+  border: 4px dotted rgba(171, 75, 171, 0.8);
+  width: 45.97168px;
+  height: 45.97168px;
+  margin-top: 0;
+  -webkit-animation: rspin 4s linear infinite; }
+
+.c26 {
+  border: 12px solid rgba(234, 166, 189, 0.5);
+  width: 21.97168px;
+  height: 21.97168px;
+  background: rgba(110, 138, 142, 0.3);
+  margin-top: 0; }

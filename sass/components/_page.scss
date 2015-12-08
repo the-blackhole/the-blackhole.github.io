@@ -1,0 +1,36 @@
+body {
+  background: $bg-black;
+  height: 100%;
+  width: 100%;
+  font-family: 'MF LangSong (Noncommercial)', Arial;
+}
+
+.container {
+  width: 620px;
+  margin: 40px auto;
+  height: 620px;
+}
+
+.header {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  h1 {
+    font-size: 300px;
+    line-height: 300px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+  }
+  p {
+    font-size: 2em;
+    text-align: right;
+    padding-right: 20px;
+    margin: 0;
+  }
+  .hide {
+    color: $bg-black;
+    float: right;
+  }
+}
