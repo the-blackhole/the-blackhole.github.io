@@ -12,6 +12,7 @@
   function init_hide_layer() {
     $('.hide-layer').click(function() {
       $(this).parent('.fly-layer').removeClass('fly-layer--show');
+      $('.show-layer').removeClass('show-layer-selected');
     });
   }
 
