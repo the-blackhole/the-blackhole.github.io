@@ -52,10 +52,15 @@ a.yeah {
   
 }
 
+.nav-container {
+  z-index: 10;
+}
+
 .container {
   width: 620px;
   margin: 40px auto;
   height: 620px;
+  z-index: 9;
 }
 
 .header {

@@ -43,10 +43,14 @@ a.yeah {
       background: deepskyblue;
       color: #fff; }
 
+.nav-container {
+  z-index: 10; }
+
 .container {
   width: 620px;
   margin: 40px auto;
-  height: 620px; }
+  height: 620px;
+  z-index: 9; }
 
 .header {
   position: absolute;
@@ -280,7 +284,8 @@ a.yeah {
   height: 40px;
   border-radius: 100px 5px;
   transition: background 1s, width 1s, height 1s, border-radius 1s;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   .fly-layer.fly-layer--show {
     transition: background 1s, width 1s, height 1s, border-radius 1s;
     left: 130px;
